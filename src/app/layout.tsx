@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Samuel Aigbefo | Full Stack Developer",
     description:
       "Explore my portfolio featuring modern web applications built with Next.js, TypeScript, and MongoDB.",
-    url: "https://your-domain.com", // update later
+    url: "https://my-portfolio-iota-ten-97.vercel.app", // update later
     siteName: "Samuel Portfolio",
     type: "website",
     images: [

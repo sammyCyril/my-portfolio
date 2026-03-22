@@ -32,8 +32,8 @@ export const projects = [
     "A modern full stack developer portfolio built with Next.js, TypeScript, and Tailwind CSS featuring dynamic project rendering, smooth animations, responsive design, and an integrated contact system.",
   tech: ["Next.js", "TypeScript", "Tailwind CSS"],
   image: "/projects/mo3.png",
-  github: "#",
-  live: "#",
+  github: "https://github.com/sammyCyril/my-portfolio",
+  live: "https://my-portfolio-iota-ten-97.vercel.app",
 }
 
 ];
