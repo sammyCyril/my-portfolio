@@ -1,16 +1,24 @@
 "use client";
 
+import { useState } from "react";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-
 import { motion } from "framer-motion";
 import { faqs } from "@/app/data/faq";
 
 export default function Faq() {
+  // Controlled state for single-open behavior
+  const [openValue, setOpenValue] = useState<string[]>([]);
+
+  const handleAccordionChange = (val: string[]) => {
+    // toggle: close if already open
+    setOpenValue(openValue[0] === val[0] ? [] : val);
+  };
+
   return (
     <section className="py-20" id="faq">
       <motion.div
@@ -25,8 +33,8 @@ export default function Faq() {
         </h2>
 
         <Accordion
-          type="single"
-          defaultValue=""
+          value={openValue}
+          onValueChange={handleAccordionChange}
           className="w-full"
         >
           {faqs.map((faq, index) => (
